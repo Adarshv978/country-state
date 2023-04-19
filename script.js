@@ -220,7 +220,7 @@ function addOptionType2() {
 
    <div class="col-5">
        <button href="#" class="d-none d-sm-inline-block btn btn-secondary btn-success shadow-sm"
-           onclick="addOptionType2()">
+           onclick="addOptionType4()">
            Add Option Type </button>
    </div>
    <div id="sub-option-type3" style="border: 2px solid red;">
@@ -284,6 +284,43 @@ function addMoreOption3() {
 
 // VTRv
 
+
+
+function addOptionType4() {
+    console.log("Button is clicked...")
+    let mainOption = document.getElementById('main-option')
+
+    let mainHtml = ` <div class="row">
+   <div class="col-3">
+       <label class=".text-lg" style="font-size: 17px; margin-top: 1px;">Option
+           Type
+       </label>
+   </div>
+   <div class="col-4">
+       <select class="form-select bg-gradient-secondary border-3 small " aria-label="Default select example"
+           style="width: 300px;" id="option-type4" onchange="getvalue4() ">
+           <option selected>Select your Option</option>
+
+           <option value="radio">Radio</option>
+           <option value="checkbox"><i class="fa-duotone fa-square-check"></i>Checkbox
+           </option>
+           <option value="dropdown">Dropdown</option>
+           <option value="text">Text</option>
+       </select>
+
+   </div>
+
+   <div class="col-5">
+       <button href="#" class="d-none d-sm-inline-block btn btn-secondary btn-success shadow-sm"
+           onclick="addOptionType4()">
+           Add Option Type </button>
+   </div>
+   <div id="sub-option-type4" style="border: 2px solid red;">
+   </div>
+</div>`
+
+    mainOption.innerHTML += mainHtml
+}
 
 
 
