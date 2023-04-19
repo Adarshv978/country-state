@@ -183,7 +183,7 @@ function getvalue2() {
 
 function addMoreOption2() {
     let optionType = document.getElementById('sub-option-type2');
-    console.log("Botton is clicked...", optionType)
+
     let containerOptionArea = document.getElementById('containerOptionArea2')
     console.log(containerOptionArea)
     optionType.innerHTML += containerOptionArea.innerHTML;
@@ -233,7 +233,7 @@ function addOptionType2() {
 function getvalue3() {
     let subOption2 = document.getElementById('sub-option-type3');
     let optionTypeValue = document.getElementById('option-type3').value;
-    console.log("AMU",optionTypeValue)
+    console.log("AMU", optionTypeValue)
     let optionType = document.getElementById('sub-option-type');
 
     let optionHTML = '';
@@ -282,7 +282,7 @@ function addMoreOption3() {
 }
 
 
-// VTRv
+// Option 4
 
 
 
@@ -323,18 +323,33 @@ function addOptionType4() {
 }
 
 
+function addMoreOption4() {
+    let optionType = document.getElementById('sub-option-type4');
+    console.log("Botton is clicked...", optionType)
+    // let containerOptionArea = document.getElementById('containerOptionArea3')
+    // console.log(containerOptionArea)
+    // optionType.innerHTML += containerOptionArea.innerHTML;
+    let containerOptionArea = document.getElementById('containerOptionArea4');
+    console.log(containerOptionArea)
+    optionType.innerHTML += containerOptionArea.innerHTML;
+}
+
+
+
+
+
 
 
 function getvalue4() {
     count = count + 1;
     let subOption2 = document.getElementById('sub-option-type4');
-    console.log("jdj",subOption2)
+    console.log("jdj", subOption2)
     let optionTypeValue = document.getElementById('option-type4').value;
-    console.log("Option type",optionTypeValue)
+    console.log("Option type", optionTypeValue)
     let optionType = document.getElementById('sub-option-type');
 
     let optionHTML = '';
-    optionHTML = `<div class="container" style="margin-top: 20px; " id="containerOptionArea5">
+    optionHTML = `<div class="container" style="margin-top: 20px; " id="containerOptionArea4">
    <div class="row">
    <div class="col-3"></div>
        
@@ -362,10 +377,11 @@ function getvalue4() {
        <div class="col-4">
            <br>
            <button href="#" class="d-none d-sm-inline-block btn btn-secondary btn-success shadow-sm"
-               onclick="addMoreOption2(); ">
+               onclick="addMoreOption4(); ">
                Add Option </button>
        </div>
    </div>
 </div>`;
     subOption2.innerHTML = optionHTML
 }
+
